@@ -9,23 +9,23 @@
 $ netcat 127.0.0.1 6969
 MY_ID
 ERR 00 # Not connected
-LOGIN aa 00
+LOGIN name pass
 OK
 MY_ID
 OK
 0
-LOGIN bb 11
+LOGIN other one
 ERR 02 # Already connected
 ```
 
 ## Supported commands
-- Login: `LOGIN name password`
-- Test id: `MY_ID`
+- `LOGIN name password`- login into the game 
+- `MY_ID`- test id getter
 
 ## Error list
-- **ERR 00** - Not connected
-- **ERR 01** - Command not supported
+- `ERR 00`- Not connected
+- `ERR 01`- Command not supported
 
 ### Login
-- **ERR 02** - Wrong login or password
-- **ERR 03** - Already logged in
+- `ERR 02` - Wrong login or password
+- `ERR 03` - Already logged in
