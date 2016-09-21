@@ -6,7 +6,7 @@
 
 ## Example
 ``` shell
-netcat 127.0.0.1 6969
+$ netcat 127.0.0.1 6969
 MY_ID
 ERR 00 # Not connected
 LOGIN aa 00
