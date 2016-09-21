@@ -23,8 +23,8 @@ ERR 02 # Already connected
 - `MY_ID`- test id getter
 
 ## Error list
-- `ERR 00`- Not connected
-- `ERR 01`- Command not supported
+- `ERR 00` - Not connected
+- `ERR 01` - Command not supported
 
 ### Login
 - `ERR 02` - Wrong login or password
