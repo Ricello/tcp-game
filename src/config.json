@@ -2,21 +2,25 @@
 	"host": "127.0.0.1",
 	"port": 6969,
 	"registeredUsers": {
+		"test": {
+			"name": "test",
+			"password": "pass",
+			"id": 0
+		},
 		"aa": {
+			"name": "aa",
 			"password": "00",
-			"id": "0"
+			"id": 1
 		},
 		"bb": {
+			"name": "bb",
 			"password": "11",
-			"id": "1"
+			"id": 2
 		},
 		"cc": {
+			"name": "cc",
 			"password": "22",
-			"id": "2"
-		},
-		"dd": {
-			"password": "33",
-			"id": "3"
+			"id": 3
 		}
 	}
 }
