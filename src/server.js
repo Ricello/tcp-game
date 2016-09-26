@@ -253,6 +253,8 @@ net.createServer(function(socket) {
 				console.log(command);
 				socket.write('ERR 102 Unknown command\n');
 		}
+	}).on('error', function(){ 
+		socket.close();
 	});
 	
 	// Close connection and remove client

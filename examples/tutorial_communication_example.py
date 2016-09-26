@@ -20,4 +20,6 @@ f.readline() # read 'OK'
 # Read turns left
 command(f, "TURNS_LEFT")
 f.readline() # read 'OK'
+command(f, "WAIT")
+f.readline() # read 'OK'
 print f.readline().strip()
