@@ -9,12 +9,12 @@
 $ netcat 127.0.0.1 6969
 MY_ID
 ERR 00 # Not connected
-LOGIN aa 00
+LOGIN name pass
 OK
 MY_ID
 OK
 0
-LOGIN bb 11
+LOGIN other one
 ERR 02 # Already connected
 ```
 
@@ -104,3 +104,14 @@ Zwraca liczbę tur pozostałych do końca rundy. Przykład komunikacji:
 C++ - polecamy bibliotekę Asio (tutoriale: [t1](http://www.boost.org/doc/libs/1_51_0/doc/html/boost_asio/tutorial/tutdaytime1.html), [t2](http://www.gamedev.net/blog/950/entry-2249317-a-guide-to-getting-started-with-boostasio/))
 
 Python - wbudowany moduł socket [tutorial](http://www.binarytides.com/python-socket-programming-tutorial/). Dostępny jest również przykładowy [kod do komunikacji.](/examples/tutorial_communication_example.py) 
+=======
+- `LOGIN name password`- login into the game 
+- `MY_ID`- test id getter
+
+## Error list
+- `ERR 00` - Not connected
+- `ERR 01` - Command not supported
+
+### Login
+- `ERR 02` - Wrong login or password
+- `ERR 03` - Already logged in
